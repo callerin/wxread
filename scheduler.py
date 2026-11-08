@@ -29,7 +29,7 @@ def run_job():
         logging.error(f"运行任务时发生异常: {e}")
 
 if __name__ == "__main__":
-    cron_schedule = os.getenv("CRON_SCHEDULE", "0 1 * * *")
+    cron_schedule = os.getenv("CRON_SCHEDULE", "0 0 * * *")
     timezone = os.getenv("TZ", "Asia/Shanghai")
     
     logging.info(f"使用时区: {timezone}")
