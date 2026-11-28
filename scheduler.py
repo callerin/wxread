@@ -30,7 +30,7 @@ def run_job():
 
 if __name__ == "__main__":
     cron_schedule = os.getenv("CRON_SCHEDULE", "0 9 * * *")
-    timezone = os.getenv("TZ", "Asia/Shanghai")
+    #timezone = os.getenv("TZ", "Asia/Shanghai")
     
     logging.info(f"使用时区: {timezone}")
     logging.info(f"解析定时规则 (CRON_SCHEDULE): {cron_schedule}")
